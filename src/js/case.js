@@ -1,6 +1,9 @@
 
 import "CSS/case.less"
-
+import { caseSwiper } from './swiper';
 $(document).ready(function(){
-  console.log("index page")
+  console.log("case page")
+
+  caseSwiper()
+
 });

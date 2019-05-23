@@ -7,6 +7,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptmizeCss = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
+
 module.exports = {
   mode: "development",
   entry: {
@@ -40,7 +41,16 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.css$/,
+
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      },
+      {
         test: /\.styl$/,
+
         use: [
           'style-loader',
           'css-loader',
@@ -48,7 +58,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(less|css)$/,
+        test: /\.less$/,
         use: [
           'style-loader',
           'css-loader',

@@ -67,12 +67,12 @@
       bottom: 34px;
       cursor: pointer;
       &::after{
+        content: "";
         background: url(../../static/img/right.png) no-repeat;
         display: inline-block;
         width: 22px;
         height: 22px;
         zoom: 0.6;
-        content: '';
         margin-left: 11px;
         margin-bottom: -2px;
       }
@@ -93,23 +93,23 @@
     }
   }
   &::before{
+    content: "";
     background: url(../../static/img/left.png) no-repeat;
     background-position: center;
     display: inline-block;
     width: 40px;
     height: 22px;
     // zoom: 0.6;
-    content: '';
     margin-bottom: -2px;
   }
   &::after{
+    content: "";
     background: url(../../static/img/right.png) no-repeat;
     background-position: center;
     display: inline-block;
     width: 40px;
     height: 22px;
     // zoom: 0.6;
-    content: '';
     margin-bottom: -2px;
   }
 
@@ -164,4 +164,178 @@
     height: 445px;
     background-color: #1b358a;
   }
+}
+
+@media (max-width: 768px) {
+  .navbar-default {
+    background-color: #fff;
+    border-color: #fff;
+  }
+  .new-nav {
+    padding: 36px 0;
+  }
+  .news {
+    display: none;
+  }
+  .news-btn {
+    width: 21.3vw;
+    height: 5.56vw;
+    line-height: 5.56vw;
+    border-radius: 2.78vw;
+    border: 1px solid #eeeeee;
+    font-size:  2.78vw;
+    text-align: center;
+    color: #888888;
+    background-color: #ffffff;
+    &.active {
+      border: solid 1px #eeeeee;
+      background-color: #333333;
+      color: #eeeeee;
+    }
+  }
+  .dash-line {
+    margin-left: 5.47vw;
+  }
+  .news-card {
+    padding: 5.47vw 0;
+
+    &.row-reverse{
+      flex-direction: row-reverse;
+    }
+    .left {
+      width: 32.41vw;
+      height: 27.78vw;
+      margin-right: 10px !important;
+    }
+    .right {
+      flex-grow: 1;
+      .text-1 {
+        position: absolute;
+        bottom: 5.83vw;
+        margin-bottom: 0vw;
+        font-size: 2.22vw;
+      }
+      .text-2 {
+        position: absolute;
+        top: 0;
+        font-size: 4.44vw;
+        font-size: 4.44vw;
+        line-height: 6.67vw;
+        margin-bottom: 0vw;
+      }
+      .text-3 {
+        display: none;
+      }
+      .bottom-btn {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        font-size: 2.22vw;
+        &:after{
+          content: "";
+          background: url(../../static/img/right.png) no-repeat;
+          display: inline-block;
+          border-radius: 0.05vw;
+          zoom: 0.4;
+          margin-left: 5.01vw;
+          margin-bottom: -0.2px;
+        }
+
+      }
+    }
+  }
+
+  .news-page {
+    padding: 7.4vw;
+    .page-item {
+      margin: 0 1.85vw;
+      font-size: 2.22vw;
+      color: #888888;
+      &.active{
+        color: #333333;
+      }
+    }
+    &::before{
+      content: "";
+      background: url(../../static/img/left.png) no-repeat;
+      background-position: center;
+      display: inline-block;
+      width: 40px;
+      height: 22px;
+      zoom: 0.6;
+      margin-bottom: -2px;
+    }
+    &::after{
+      content: "";
+      background: url(../../static/img/right.png) no-repeat;
+      background-position: center;
+      display: inline-block;
+      width: 40px;
+      height: 22px;
+      zoom: 0.6;
+      margin-bottom: -2px;
+    }
+
+  }
+
+  .news-info{
+    position: relative;
+    color: #888888;
+    font-family: SourceHanSansCN-Light;
+
+    .col-md-5{
+      width: 100%;
+    }
+    .text-1 {
+      color: #888888;
+      width: 27.13vw;
+      font-size: 2.78vw;
+      line-height: 5.56vw;
+      margin-bottom: 0;
+      br {
+        display: none;
+      }
+    }
+    .text-2 {
+      display: none;
+    }
+    .text-3 {
+      font-size: 2.22vw;
+      margin-bottom: 8.06vw;
+    }
+    .text-right{
+      text-align: left;
+    }
+    .text-left{
+      text-align: left;
+    }
+    .dis-ib{
+      display: inline-block;
+    }
+    .return{
+      margin-right: 0;
+      margin-left: 0;
+      width: 12.04vw;
+      height: 5.56vw;
+      background-color: #ffffff;
+      border-radius: 2.78vw;
+      border: solid 0.09vw #eeeeee;
+      background: url(../../static/img/return_1.png) no-repeat;
+      background-size: cover;
+      right: 4.91vw;
+      position: absolute;
+      a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .placeholder{
+      margin: 5.65vw 0 10.4vw;
+      width: 90.65vw;
+      height: 50.09vw;
+      background-color: #1b358a;
+    }
+  }
+
 }

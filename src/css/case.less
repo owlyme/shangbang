@@ -37,23 +37,32 @@
   }
   .banner-item {
     width: 100%;
+    margin-bottom: 0;
     background-color: #304ba3;
-  }
-  .text-1 {
-    font-family: SourceHanSansCN-Regular;
-    font-size: 30px;
-    color: #bbbbbb;
-    position: absolute;
-    left: 24px;
-    top: 35px;
-  }
-  .text-2 {
-    font-family: SourceHanSansCN-Light;
-    font-size: 18px;
-    color: #bbbbbb;
-    position: absolute;
-    bottom: 42px;
-    left: 24px;
+    .banner-info {
+      height: 100%;
+      width: 100%;
+      top: 0;
+      color: #bbbbbb;
+      background-color: none;
+      padding: 4.17vw 4.72vw 3.98vw 4.72vw;
+      .banner-t1 {
+        font-family: SourceHanSansCN-Regular;
+        font-size: 30px;
+        color: #bbbbbb;
+        position: absolute;
+        left: 24px;
+        top: 35px;
+      }
+      .banner-t2 {
+        font-family: SourceHanSansCN-Light;
+        font-size: 18px;
+        color: #bbbbbb;
+        position: absolute;
+        bottom: 42px;
+        left: 24px;
+      }
+    }
   }
 }
 
@@ -69,6 +78,7 @@
     border-radius: 1px;
     background-image: url('../../static/img/load_1.png');
     background-repeat: no-repeat;
+    background-size: 100%;
     &:hover{
       background-image: url('../../static/img/load_2.png');
     }
@@ -89,3 +99,160 @@
   letter-spacing: 0px;
 }
 
+.visiable-b {
+  display: block;
+}
+.visiable-small {
+  display: none;
+}
+@media (max-width: 768px) {
+  .case-swiper-container {
+    padding: 3.98vw 0 ;
+  }
+  .swiper-slide {
+    width: 14.91vw;
+    height: 2.78vw;
+    font-size: 2.78vw;
+    line-height: 2.78vw;
+    color: #888888;
+    text-align: center;
+    &:nth-child(1) {
+      width: 9% !important;
+    }
+    &:nth-child(2) {
+      width: 17% !important;
+    }
+    &:nth-child(3) {
+      width: 18% !important;
+    }
+    &:nth-child(4) {
+      width: 23% !important;
+    }
+    &:nth-child(5) {
+      width: 14% !important;
+    }
+    &:nth-child(5) {
+      width: 17% !important;
+    }
+  }
+  .carousel{
+    height: 670px;
+    background-color: #1b358a;
+  }
+
+  .tab-container{
+    height: 80px;
+    .tab-item {
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 30px;
+      letter-spacing: 0px;
+      color: #888888;
+      &.active {
+        color: #555555;
+      }
+    }
+  }
+
+  .banner-container {
+    position: relative;
+    margin: 0px;
+    .scale{
+      padding-bottom: 77.3%;
+      /*相当于盒子的高度*/
+      width: 25%;
+      /*即维持宽高比为1:2*/
+      height: 0;
+      position: relative;
+      > div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        .img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .banner-item {
+      width: 100%;
+      margin-bottom: 17.78vw;
+      background-color: #304ba3;
+      .banner-info {
+        height: 16.85vw;
+        width: 100%;
+        top: 100%;
+        color: #bbbbbb;
+        background-color: #eaeaea;
+        .banner-t1 {
+          left: 4.72vw;
+          top: 4.17vw;
+          height: 3.15vw;
+          font-size: 3.33vw;
+          letter-spacing: 0vw;
+        }
+        .banner-t2 {
+          left: 4.72vw;
+          top: 10.37vw;
+          height: 2.5vw;
+          font-size: 2.22vw;
+        }
+      }
+    }
+    .text-1 {
+      font-family: SourceHanSansCN-Regular;
+      font-size: 30px;
+      color: #bbbbbb;
+      position: absolute;
+      left: 24px;
+      top: 35px;
+    }
+    .text-2 {
+      font-family: SourceHanSansCN-Light;
+      font-size: 18px;
+      color: #bbbbbb;
+      position: absolute;
+      bottom: 42px;
+      left: 24px;
+    }
+  }
+
+  .page-nav {
+    height: 24.35vw;
+    background-color: #fff;
+    margin: 0px;
+    padding-top: 6.48vw;
+    .more {
+      width: 23.15vw;
+      height: 5.56vw;
+      border-radius: 0.09vw;
+      background-image: url('../../static/img/load_1.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 150%;
+      &:hover{
+        background-image: url('../../static/img/load_2.png');
+      }
+    }
+  }
+  .dash-line {
+    margin: 0 4.81vw;
+  }
+  .text3{
+    width: 35.93vw;
+    height: 7.59vw;
+    line-height: 7.59vw;
+    border-radius: 0.09vw;
+    text-align: center;
+    font-size: 3.33vw;
+  }
+
+  .visiable-b {
+    display: none;
+  }
+  .visiable-s {
+    display: block;
+  }
+}
