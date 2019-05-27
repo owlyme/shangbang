@@ -1,44 +1,61 @@
+.container-fluid{
+  height: 34.69vw;
+	background-color: #1b358a;
+}
 .swiper-container {
   width: 100%;
   height: 100%;
+  .swiper-pagination {
+    bottom: 2.76vw !important;
+    .swiper-pagination-bullet {
+      background: #ffffff !important;
+      opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+      background: none !important;
+      border: solid 0.09vw #ffffff;
+    }
+  }
+  .swiper-pagination-bullet{
+    opacity: 1 !important;
+    background: #fff !important;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: none !important;
+    border: 1px solid #fff !important;
+  }
 }
 
 .text-big {
-	height: 45px;
 	font-family: SourceHanSansCN-Light;
-	font-size: 48px;
+	font-size: 2.5vw;
 	font-weight: normal;
 	font-stretch: normal;
 	letter-spacing: 0px;
-	color: #555555;
+  color: #555555;
+  padding-top: 5.21vw;
+  padding-bottom:3.07vw;
 }
 
 .text-small {
 	font-family: SourceHanSansCN-Light;
-	font-size: 16px;
+	font-size: 0.83vw;
 	font-weight: normal;
 	font-stretch: normal;
-	line-height: 36px;
-	letter-spacing: 0px;
-	color: #555555;
-}
-
-
-
-.carousel{
-	height: 670px;
-	background-color: #1b358a;
+	line-height: 1.88vw;
+	letter-spacing: 0vw;
+  color: #555555;
+  padding-bottom: 3.85vw;
 }
 
 .tab-container{
+  height: 4.11vw;
 	.tab-item {
-    height: 80px;
     cursor: pointer;
-		font-size: 18px;
+		font-size: 0.94vw;
 		font-weight: normal;
 		font-stretch: normal;
-		line-height: 30px;
-		letter-spacing: 0px;
 		color: #888888;
 		&.active {
 			color: #555555;
@@ -47,105 +64,128 @@
 }
 
 .banner-container {
-  margin: 0px;
+  padding: 0 2.5vw;
   .scale{
-      padding-bottom: 77.3%;
-      /*相当于盒子的高度*/
-      width: 25%;
-      /*即维持宽高比为1:2*/
-      height: 0;
-      position: relative;
-      > div {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-      }
+    padding-bottom: 77.3%;
+    /*相当于盒子的高度*/
+    width: 25%;
+    /*即维持宽高比为1:2*/
+    height: 0;
+    position: relative;
+    > div {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
   }
   .banner-item {
     width: 100%;
     margin-bottom: 0;
     background-color: #304ba3;
     .banner-info {
-
+      height: 16.85vw;
+      width: 100%;
+      top: 0;
+      color: #bbbbbb;
+      // background-color: #eaeaea;
+      padding: 0;
+      .banner-t1 {
+        position: absolute;
+        left: 1.25vw;
+        top: 1.82vw;
+        font-size: 1.56vw;
+        letter-spacing: 0vw;
+      }
+      .banner-t2 {
+        position: absolute;
+        left: 1.25vw;
+        top: 21.3vw;
+        padding-top: 0vw;
+        font-size: 0.94vw;
+      }
     }
   }
 }
 
 .page-nav {
-  height: 137px;
+  height: 7.14vw;
   background-color: #eeeeee;
-  margin: 0px;
-  padding-top: 36px;
+  margin: 0 2.5vw;
   .prev {
-
-    width: 60px;
-    height: 60px;
+    display: block;
+    width: 3.13vw;
+    height: 3.13vw;
+    min-width: 32px;
+    min-height: 32px;
+    border-radius: 0.05vw;
     background-image: url('../../static/img/prev.png');
     background-repeat: no-repeat;
+    background-position: center;
   }
   .center {
-    width: 204px;
-    height: 60px;
+    display: block;
+    width: 10.63vw;
+    height: 3.13vw;
+    min-height: 32px;
+    border-radius: 0.05vw;
     background-image: url('../../static/img/more_1.png');
     background-repeat: no-repeat;
+    background-position: center;
   }
   .next {
-    width: 60px;
-    height: 60px;
+    display: block;
+    width: 3.13vw;
+    height: 3.13vw;
+    min-width: 32px;
+    min-height: 32px;
+    border-radius: 0.05vw;
     background-image: url('/static/img/next.png');
     background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
 .remind {
-  padding: 137px 0;
+  padding: 7.14vw 0 5.26vw;
+  margin: 0 14.43vw;
   .text1{
-    height: 23px;
     font-family: SourceHanSansCN-Light;
-    font-size: 24px;
+    font-size: 1.25vw;
     font-weight: normal;
     font-stretch: normal;
-    line-height: 30px;
-    letter-spacing: 0px;
+    line-height: 1.25vw;
     color: #888888;
-    margin-bottom: 31px;
+    margin-bottom: 1.61vw;
   }
   .text2 {
-    height: 16px;
     font-family: SourceHanSansCN-Light;
-    font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    line-height: 30px;
-    letter-spacing: 0px;
+    font-size: 0.83vw;
+    line-height: 1.66vw;
     color: #888888;
-    margin-bottom: 17px;
+    margin-bottom: 0.89vw;
   }
 }
 
+.margin-dash{
+  margin: 0 14.43vw;
+}
+.nav {
+  padding: 2.81vw;
+}
 .text3{
-    width: 330px;
-    text-align: center;
-    height: 60px;
-    line-height: 60px;
-    background-color: #eeeeee;
-    border-radius: 1px;
-    font-family: SourceHanSansCN-Light;
-    font-size: 30px;
-    font-weight: normal;
-    font-stretch: normal;
-    letter-spacing: 0px;
+  width: 17.19vw;
+  height: 3.13vw;
+  margin: 2.97vw;
+  text-align: center;
+  height: 3.13vw;
+  line-height: 3.13vw;
+  background-color: #eeeeee;
+  border-radius: 0.05vw;
+  font-family: SourceHanSansCN-Light;
+  font-size: 1.56vw;
 }
 
-.swiper-pagination-bullet{
-  opacity: 1 !important;
-  background: #fff !important;
-}
-.swiper-pagination-bullet-active {
-  opacity: 1;
-  background: none !important;
-  border: 1px solid #fff !important;
-}
+
 
 @media (max-width: 768px) {
   .paddingTB40 {
@@ -157,32 +197,37 @@
   }
 
   .text-big {
-    height: 5.19vw;
     font-family: SourceHanSansCN-Light;
     font-size: 5.56vw;
     font-weight: normal;
     font-stretch: normal;
     letter-spacing: 0vw;
     color: #555555;
+    padding-top: 9.44vw;
+    padding-bottom: 5.19vw;
   }
 
   .text-small {
+    width: 93.98vw;
+    margin: 0 auto;
     font-family: SourceHanSansCN-Light;
     font-size: 1.67vw;
     font-weight: normal;
     font-stretch: normal;
-    line-height: 6.44vw;
+    line-height: 4.44vw;
     letter-spacing: 0vw;
     color: #555555;
+    padding-bottom: 4.63vw;
   }
 
-  .carousel{
+  .container-fluid{
     width: 100vw;
     height: 138.89vw;
     background-color: #1b358a;
   }
 
   .tab-container{
+    height: 9.54vw;
     .tab-item {
       height: 9.54vw;
       cursor: pointer;
@@ -198,7 +243,8 @@
   }
 
   .banner-container {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     .scale{
         padding-bottom: 77.3%;
         /*相当于盒子的高度*/
@@ -224,11 +270,17 @@
         background-color: #eaeaea;
         padding: 4.17vw 4.72vw 3.98vw 4.72vw;
         .banner-t1 {
+          position: relative;
+          left: unset;
+          top: unset;
           height: 3.15vw;
           font-size: 3.33vw;
           letter-spacing: 0vw;
         }
         .banner-t2 {
+          position: relative;
+          left: unset;
+          top: unset;
           padding-top: 3.05vw;
           height: 2.5vw;
           font-size: 2.22vw;
@@ -238,11 +290,9 @@
   }
 
   .page-nav {
-    min-height: 60px;
     height: 12.69vw;
     background-color: #eeeeee;
     margin: 0px;
-    padding-top: 3.98vw;
     .prev {
       display: none;
     }
@@ -261,8 +311,17 @@
     }
   }
 
+  .margin-dash{
+    margin: 0 4.91vw;
+  }
+
+  .nav {
+    padding: 3.98vw 0;
+  }
+
   .remind {
     padding: 7.22vw 5vw;
+    margin: 0 0;
     color: #888888;
     .text1{
       height: 3.06vw;
@@ -275,6 +334,7 @@
       height: 2.22vw;
       font-size: 2.22vw;
       line-height: 2.78vw;
+      margin-bottom: 3.52vw;
     }
   }
 

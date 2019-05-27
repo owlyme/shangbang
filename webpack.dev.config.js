@@ -13,6 +13,7 @@ module.exports = {
   entry: {
     index: "./src/js/index.js",
     news: "./src/js/news.js",
+    news: "./src/js/news.js",
     case: "./src/js/case.js",
     casedetial: "./src/js/casedetial.js",
     about: "./src/js/about.js",

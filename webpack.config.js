@@ -10,10 +10,13 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 module.exports = {
   mode: "development",
   entry: {
-    index: "./src/js/index.js",
+    iindex: "./src/js/index.js",
     news: "./src/js/news.js",
     case: "./src/js/case.js",
-    common: "./src/common/common.js",
+    casedetial: "./src/js/casedetial.js",
+    about: "./src/js/about.js",
+    contact: "./src/js/contact.js",
+    common: "./src/common/common.js"
   },
   devServer: {
     port: 3001,
@@ -94,9 +97,33 @@ module.exports = {
       chunksSortMode: "manual"
     }),
     new HtmlWebpackPlugin({
+      template: "./src/html/newsinfo.html",
+      filename: "newsinfo.html",
+      chunks: ["common","news"],
+      chunksSortMode: "manual"
+    }),
+    new HtmlWebpackPlugin({
       template: "./src/html/case.html",
       filename: "case.html",
       chunks: ["common","case"],
+      chunksSortMode: "manual"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/html/casedetial.html",
+      filename: "casedetial.html",
+      chunks: ["common","casedetial"],
+      chunksSortMode: "manual"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/html/about.html",
+      filename: "about.html",
+      chunks: ["common","about"],
+      chunksSortMode: "manual"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/html/contact.html",
+      filename: "contact.html",
+      chunks: ["common","contact"],
       chunksSortMode: "manual"
     }),
     new CleanWebpackPlugin(),

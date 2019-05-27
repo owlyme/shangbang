@@ -11,7 +11,7 @@ module.exports = {
           viewportWidth: 1080,
           unitPrecision: 3,
           viewportUnit: 'vw',
-          selectorBlackList: ['.ignore', '.hairlines' ],
+          selectorBlackList: ['.ignore', '.hairlines'],
           minPixelValue: 1,
           mediaQuery: false
       },

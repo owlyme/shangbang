@@ -1,50 +1,107 @@
 body {
   background: #eaeaea;
 }
-.carousel{
-	height: 670px;
+.swiper-container{
+  width: 100%;
+	height: 45.83vw;
 	background-color: #1b358a;
+  .swiper-slide {
+    position: relative;
+    .text1 {
+      position: absolute;
+      top: 7.71vw;
+      left: 14.38vw;
+      height: 45px;
+      font-family: SourceHanSansCN-Light;
+      font-size: 2.5vw;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 45px;
+      letter-spacing: 0vw;
+      color: #ffffff;
+    }
+    .text2 {
+      position: absolute;
+      top: 12.86vw;
+      left: 14.38vw;
+      width: 9.63vw;
+      height: 0.31vw;
+      background-color: #ffffff;
+    }
+    .text3 {
+      position: absolute;
+      top: 17.71vw;
+      left: 14.38vw;
+      height: 3.06vw;
+      font-family: SourceHanSansCN-Light;
+      font-size: 1.25vw;
+      font-weight: normal;
+      font-stretch: normal;
+      letter-spacing: 0vw;
+      color: #ffffff;
+    }
+  }
+  .swiper-pagination {
+    bottom: 3.32vw   !important;
+    .swiper-pagination-bullet {
+      background: #ffffff !important;
+      opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+      background: none !important;
+      border: solid 0.09vw #ffffff;
+    }
+  }
+}
+.container-box {
+  padding: 1.25vw 14.48vw 4.44vw;
 }
 
-.row {
-  margin-right: 0px;
-  margin-left: 0px;
-  margin: 24px 0;
-}
 .flex-v {
   &.left {
-    padding: 56px 64px;
+    padding: 3.02vw 3.33vw;
     color: #888888;
-    height: 510px;
+    height: 26.56vw;
     background-color: #ffffff;
     text-align: right;
     margin-bottom: 0;
   }
   &.right {
-    padding: 56px 64px;
+    padding: 3.02vw 3.33vw;
     color: #888888;
-    height: 510px;
+    height: 26.56vw;
     background-color: #f5f5f5;
     text-align: left;
   }
 
   .text-1 {
-    font-size: 30px;
+    font-size: 1.56vw;
   }
   .text-2 {
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 0.83vw;
+    font-size: 0.83vw;
   }
   .text-3 {
-    font-family: CourierNewPSMT;
-    font-size: 14px;
-    line-height: 30px;
+    font-size: 0.83vw;
+    line-height: 1.56vw;
+  }
+  .text-4 {
+      margin-top: 0;
+      font-family: CourierNewPSMT;
+      font-size: 0.73vw;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: 1.56vw;
+      letter-spacing: 0vw;
+      color: #888888;
   }
 }
 .space {
   background: #ffffff;
-  padding: 36px 42px 192px;
-  margin-bottom: 83px;
+  padding: 1.18vw 2.91vw 10vw;
+  margin-bottom: 4.32vw;
+  margin-top: 1.25vw;
+
   .inner {
     height: 0;
     width: 100%;
@@ -118,10 +175,8 @@ body {
     }
   }
 
-  .row {
-    margin-right: 0px;
-    margin-left: 0px;
-    margin: 2.22vw 0;
+  .container-box {
+    padding: 2.22vw 0vw;
   }
 
   .flex-v {
@@ -157,6 +212,8 @@ body {
       color: #888888;
     }
     .text-4 {
+      height: auto;
+      margin-top: 9.7vw;
       font-family: CourierNewPSMT;
       font-size: 2.22vw;
       line-height: 4.44vw;

@@ -5,5 +5,6 @@ import { casedetialSwiper } from './swiper';
 $(document).ready(function(){
   console.log("detial page")
   casedetialSwiper()
+  require('./header.js')
 
 });
