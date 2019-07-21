@@ -1,6 +1,8 @@
 /node_modules
 /.vscode
 /cacheFiles
+/dist
+
 # misc
 npm-debug.log
 package-lock.json
