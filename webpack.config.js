@@ -6,11 +6,11 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptmizeCss = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
-
+const CopyPlugin = require('copy-webpack-plugin')
 module.exports = {
   mode: "development",
   entry: {
-    iindex: "./src/js/index.js",
+    index: "./src/js/index.js",
     news: "./src/js/news.js",
     case: "./src/js/case.js",
     casedetial: "./src/js/casedetial.js",
@@ -42,7 +42,7 @@ module.exports = {
       {
         test: /\.styl$/,
         use: [
-          'style-loader',
+          MiniCssExtractPlugin.loader,
           'css-loader',
           'stylus-loader'
         ]
@@ -50,7 +50,7 @@ module.exports = {
       {
         test: /\.(less|css)$/,
         use: [
-          'style-loader',
+          MiniCssExtractPlugin.loader,
           'css-loader',
           'less-loader'
         ]
@@ -132,5 +132,9 @@ module.exports = {
       // both options are optional
       filename: 'css/[name].[hash:8].css'
     }),
+
+    new CopyPlugin([
+      { from: path.resolve(__dirname, 'static'), to: 'static' }
+    ]),
   ]
 };
